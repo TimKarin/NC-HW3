@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>User information</h1>
+<p th:text="'First Name: ' + ${user.firstName}" />
+<p th:text="'Last Name: ' + ${user.lastName}" />
+<p th:text="'Birthday: ' + ${user.birthday}" />
+<p th:text="'salary: ' + ${user.salary}" />
+<p th:text="'Email: ' + ${user.email}" />
+<p th:text="'company: ' + ${user.companyName}" />
+
+<!--<a href="/edit" th:href="@{/edit(firstName=${user.firstName}, lastName=${user.lastName})}">Edit</a>-->
+<a href="/sendMessage" th:href="@{/sendMessage(firstName=${user.firstName}, lastName=${user.lastName})}">Send Message</a>
+<a href="/delete" th:href="@{/delete(firstName=${user.firstName}, lastName=${user.lastName})}">Delete User</a>
+<a href="/">Home</a>
+<br><br><br><br><br>
+Time:
+<p th:text="${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm')}"> </p>
+User Agent
+<p th:text="${#httpServletRequest.getHeader('User-Agent')}"> </p>
+</body>
+</html>

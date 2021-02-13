@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Send Message to <p th:text="${user.firstName + ' ' + user.lastName}"> </h1>
+<form action="#" th:action="@{/sendMessage}" th:object="${message}" method="post">
+    <p> To <input type="text", readonly th:field="*{email}"></p>
+    <p>Subject <input type="text" th:field="*{subject}" /></p>
+    <p><textarea rows="10" cols=50 th:field="*{text}">Text</textarea></p>
+    <p><input type="submit" value="Send" /> <input type="reset" value="Clear" /></p>
+</form>
+<a href="/">Home</a>
+</body>
+</html>

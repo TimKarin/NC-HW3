@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>Welcome</h1>
+
+<h2><a href="/addUser"> Add User</a></h2>
+<h2><a href="/upload"> Add User from file</a></h2>
+<h2><a href="/findUser"> Find User</a></h2>
+
+<!--<h1>Add User</h1>-->
+<!--<form action="#" th:action="@{/index}" th:object="${user}" method="post">-->
+<!--    <p>First name: <input type="text" th:field="*{firstName}"/>-->
+<!--        <div th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" First Name Error/></p>-->
+<!--    <p>Last name: <input type="text" th:field="*{lastName}">-->
+<!--        <div th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" Name Error/></p>-->
+<!--    <p>Birthday: <input type="date" th:field="*{birthday}">-->
+<!--        <div th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"/></p>-->
+<!--    <p>Salary: <input type="number" th:field="*{salary}">-->
+<!--        <div th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}"/></p>-->
+<!--    <p>Email: <input type="email" th:field="*{email}">-->
+<!--        <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"/></p>-->
+<!--    <p>Company: <input type="text" th:field="*{companyName}">-->
+<!--        <div th:if="${#fields.hasErrors('companyName')}"Ошибка th:errors="*{companyName}"/></p>-->
+<!--    <p><input type="submit" value="Add" /> <input type="reset" value="Clear" /></p>-->
+<!--</form>-->
+
+<!--<form action="/upload" enctype="multipart/form-data" method="post">-->
+<!--    File:-->
+<!--    <input type="file" name="file" id="file" /> <br/>-->
+<!--    <input type="submit" value="Upload" name="upload" id="upload" />-->
+<!--</form>-->
+
+<!--<h1>Search User</h1>-->
+<!--<form action="#" th:action="@{/userInfo}" th:object="${uk}" method="get">-->
+<!--    <p>First name: <input type="text" th:field="*{firstName}" /></p>-->
+<!--    <p>Last name: <input type="text" th:field="*{lastName}" /></p>-->
+<!--    <p><input type="submit" value="Find" /> <input type="reset" value="clear" /></p>-->
+<!--</form>-->
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Upload File</h1>
+
+<form action="/upload" enctype="multipart/form-data" method="post">
+    File:
+    <input type="file" name="file" id="file" /> <br/>
+    <input type="submit" value="Upload" name="upload" id="upload" />
+</form>
+<p> File must be a collection of lines.<br>
+    Each line contains information about one user.<br>
+    Information is separated by sign #.<br>
+    Information is:
+<ul>
+    <li> first Name: 3-20 symbols</li>
+    <li>last Name: 3-20 symbols</li>
+    <li>Birthday: format YYYY-MM-DD</li>
+    <li>Salary: >0</li>
+    <li>E-mail</li>
+    <li>Company Name: 3-40 symbols</li>
+</ul>
+</p>
+<p>File example:<br>
+    Ivanov#Ivan#2000-01-01#50000#ii@mail.ru#SomeCompany<br>
+    Petrov#Petr#1980-12-21#20000#pp@gmail.com#Company
+</p>
+<a href="/">Home</a>
+
+</body>
+</html>
