@@ -25,9 +25,6 @@ public class AddUserController {
         if (br.hasErrors())
             return "/addUser";
         try{
-            if (UserFileOperating.FindUser(user.getFirstName(), user.getLastName()) != null) {
-                return "edit";
-            }
             UserFileOperating.AddUser(user);
         } catch (IOException ex) {
             ex.printStackTrace();
